@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Script from "next/script";
 import { Analytics as VercelAnalytics } from "@vercel/analytics/react";
+import { SpeedInsights } from "@vercel/speed-insights/next";
 import { fontBody, fontDisplay } from "./fonts";
 import { googleAdsId, siteUrl } from "@/lib/config/site";
 import { Nav } from "@/components/layout/Nav";
@@ -92,6 +93,7 @@ export default function RootLayout({
         <AnalyticsRouteChange />
         <ConsentBanner />
         <VercelAnalytics />
+        <SpeedInsights />
       </body>
     </html>
   );
